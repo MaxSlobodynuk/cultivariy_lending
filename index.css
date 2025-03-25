@@ -18,28 +18,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
-/* .overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.8)
-  );
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-} */
-
 .logo-block {
-  text-align: left;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .logo {
-  height: 40px;
+  align-items: center;
 }
 
 .subtitle {
@@ -49,10 +38,12 @@ html {
 }
 
 .title {
-  font-size: 32px;
-  font-weight: 900;
+  text-align: center;
+  font-size: 54px;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 .title .yellow {
@@ -60,43 +51,58 @@ html {
 }
 
 .quote {
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .description {
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 15px;
   line-height: 1.4;
 }
 
 .date-location {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   margin-bottom: 20px;
+}
+
+.speakers {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .speakers-img {
-  width: 100%;
+  /* width: 100%; */
+  align-items: center;
   border-radius: 10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .button {
+  font-family: "Montserrat", sans-serif;
   display: block;
   width: 100%;
   text-align: center;
   background: #000;
   color: #fff;
   padding: 14px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   border: 2px solid #ffd700;
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.3s;
+  z-index: 900;
+  position: relative;
+  margin-top: -50px;
 }
 
 .button:hover {
