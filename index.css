@@ -80,10 +80,8 @@ html {
 }
 
 .speakers-img {
-  /* width: 100%; */
   align-items: center;
   border-radius: 10px;
-  /* margin-bottom: 20px; */
 }
 
 .button {
@@ -108,4 +106,95 @@ html {
 .button:hover {
   background: #ffd700;
   color: #000;
+}
+
+.speakers-desc {
+  display: none;
+}
+
+.logo-desc {
+  display: none;
+}
+
+.date-location-desc {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .speakers-desc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speakers {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .date-location {
+    display: none;
+  }
+
+  .logo-desc {
+    display: block;
+    margin-bottom: 120px;
+  }
+
+  .logo-block {
+    justify-content: start;
+    margin: 0;
+  }
+
+  .wrapper {
+    background: url("images/desc-bg.png") no-repeat center center / cover;
+    padding: 60px 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 70px;
+  }
+
+  .overlay {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 90px;
+    text-align: start;
+    margin-bottom: 60px;
+  }
+
+  .date-location-desc {
+    display: block;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .quote {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .description {
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 16px;
+    margin-bottom: 0px;
+    width: 330px;
+  }
 }
